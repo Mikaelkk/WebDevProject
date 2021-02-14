@@ -2,9 +2,82 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>MarkusProto</title>
+    <style>@import url(css/MarkusStylesheet.css);</style>
   </head>
-  <body>
+  <body class="test">
+    <main>
+      <div class="gridcontainer">
+        <div class="header">
+          <p>Company logo</p>
+          <div class="search-container">
+            <button type="submit"><i class="fa fa-search"></i></button>
+            <input type="text" placeholder="Search..." name="search">
+          </div>
+        </div>
+        <div class="menu">
+          <div class="dropdown-menu">
+            <a href="Link1.html">Link 1</a>
+            <a href="Link2.html">Link 2</a>
+            <a href="shoppingcart.html">Shopping cart</a>
+          </div>
+        </div>
+        <div class="slideshow">
+          <p>Featured:</p>
+          <img class="mySlides w3-animate-left" src="https://steamuserimages-a.akamaihd.net/ugc/965368466523576783/6FC151F69A2DA52CAB4B7E55D098CE609F38CB4D/">
+          <img class="mySlides w3-animate-left" src="https://wallpaperaccess.com/full/2288806.jpg">
+        </div>
+        <div class="content">
+          <p>You may also like:</p>
+          <div class="grid2">
+            <div class="item1">
+              <img src="https://images.alphacoders.com/265/thumb-1920-265693.png">
+            </div>
+            <div class="item2">
+              <img src="https://media.magic.wizards.com/images/wallpaper/sarulf_realm_eater_khm_2560x1600_wallpaper.jpg">
+            </div>
+            <div class="item3">
+              <img src="https://wallpapercave.com/wp/XylT4dV.jpg">
+            </div>
+            <div class="item4">
+              <img src="https://i.pinimg.com/originals/24/fd/bf/24fdbfcabc207fe05f0c3939f23cc11f.jpg">
+            </div>
+            <div class="item5">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGtsMS15jpQM0xCYr11u_ph-LRiKnvODOixA&usqp=CAU">
+            </div>
+            <div class="item6">
+              <img src="https://www.itl.cat/pngfile/big/172-1729360_wallpaper-magic-the-gathering-mtg-magic-wizards-magic.jpg">
+            </div>
+            <div class="item7">
+              <img src="https://cdn.hipwallpaper.com/i/31/22/3VdNSu.jpg">
+            </div>
+            <div class="item8">
+              <img src="https://external-preview.redd.it/Fiwo31EutMz7j6sBwg2iZpewZK6_DvgS3bHJ0Vf0MRA.png?format=pjpg&auto=webp&s=d3024aa82d8d768579f958ed04e11cb4959a401a">
+            </div>
+          </div>
+        </div>
+        <div class="footer">
+          <p>This is local website for now</p>
+        </div>
+      </div>
+    </main>
+    
+    <script>
+      var myIndex = 0;
+      slideshow();
+
+      function slideshow() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        myIndex++;
+        if (myIndex > x.length) {myIndex = 1}
+        x[myIndex-1].style.display = "block";
+        setTimeout(slideshow, 3500);
+      }
+    </script>
 
   </body>
 </html>
