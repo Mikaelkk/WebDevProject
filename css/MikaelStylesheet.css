@@ -1,0 +1,83 @@
+#headerSection {
+  display: flex;
+  height: 50px;
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: stretch;
+  justify-content: space-around;
+  border: 4px dotted green;
+}
+.headerBar {
+  background-color: grey;
+  width: 100%;
+  margin-left: 5px;
+  margin-right: 5px;
+  border: 1px solid blue;
+}
+.menuBox {
+  background-color: grey;
+  width: 150px;
+  border: 1px solid blue;
+}
+.sectionHeading {
+  display:flex;
+  margin: auto;
+  height: 50px;
+  max-width: 1000px;
+}
+#featuredSection {
+  display: flex;
+  margin: auto;
+  height: 60%;
+  max-width: 1000px;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: left;
+  justify-content: left;
+  border: 4px dotted green;
+}
+.featuredItem {
+  position: relative;
+  height: auto;
+  width: 100%;
+}
+#contentSection {
+  display: flex;
+  margin: auto;
+  height: 50%;
+  max-width: 1000px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-around;
+  border: 4px dotted green;
+}
+.contentItem {
+  margin: 5px;
+  float: left;
+  height: 180px;
+}
+#footerSection {
+  display: flex;
+  height: 50px;
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: stretch;
+  justify-content: space-around;
+  border: 4px dotted green;
+}
+.footerBar {
+  background-color: grey;
+  width: 100%;
+  margin-left: 5px;
+  margin-right: 5px;
+  border: 1px solid blue;
+}
+/*h2 {
+  text-align: left;
+}
+h3 {
+  text-align: left;
+}
