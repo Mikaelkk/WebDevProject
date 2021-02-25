@@ -1,18 +1,32 @@
+@media screen and (min-width: 769px) {
+    .gridcontainer {
+        display:grid;
+        grid-template-columns: 12, 1fr;
+        grid-template-rows: 150px, 750px, 1500px, 50px;
+        grid-template-areas: 
+            "h h h h h h h h h h m m"
+            "c c c c c c c c c c c c"
+            "l l l l l l l l l l l l"
+            "f f f f f f f f f f f f";
+        grid-gap: 5px;
+        background-color: white;
+    }
+    .content .grid2 {
+        max-width: 750px;
+        grid-template-columns: 750px, 750px, 750px, 750px;
+        grid-template-rows: 750px, 750px;
+        grid-template-areas:
+            "o o o o"
+            "o o o o";
+        display: grid;
+        padding: 10px;
+        grid-gap: 10px;
+    }
+}
 .test {
     font-family: Arial, Helvetica, sans-serif;
 }
-.gridcontainer {
-    display:grid;
-    grid-template-columns: 12, 1fr;
-    grid-template-rows: 150px, 750px, 1500px, 50px;
-    grid-template-areas: 
-        "h h h h h h h h h h h m"
-        "c c c c c c c c c c c c"
-        "l l l l l l l l l l l l"
-        "f f f f f f f f f f f f";
-    grid-gap: 5px;
-    background-color: white;
-}
+
 .header {
     grid-area: h;
     background-color:rgba(164, 163, 163, 0.804);
@@ -36,17 +50,7 @@
     grid-area: l;
     margin: auto;
 }
-.content .grid2 {
-    max-width: 750px;
-    grid-template-columns: 750px, 750px, 750px, 750px;
-    grid-template-rows: 750px, 750px;
-    grid-template-areas:
-        "o o o o"
-        "o o o o";
-    display: grid;
-    padding: 10px;
-    grid-gap: 10px;
-}
+
 .footer {
     grid-area: f;
     background-color:rgba(164, 163, 163, 0.804);
@@ -55,29 +59,20 @@
 
 .header input[type=text] {
     float: right;
-    padding: 6px;
-    border: none;
-    margin-top: 8px;
-    font-size: 17px;
+    margin: 10px;
+    width: 50%;
+  	box-sizing: border-box;
+  	border: 2px solid #ccc;
+  	border-radius: 4px;
+  	font-size: 16px;
+  	background-color: white;
+  	background-image: url('https://www.freeiconspng.com/uploads/search-icon-png-2.png');
+  	background-size: 20px;
+  	background-position: 10px 10px;
+  	background-repeat: no-repeat;
+  	padding: 12px 20px 12px 40px;
 }
-.header .search-container button {
-    float: right;
-    padding: 14px;
-    margin-top: 7px;
-    margin-right: 16px;
-    background: #ddd;
-    font-size: 17px;
-    border: none;
-    cursor: pointer;
-    background-image: url('https://www.pinclipart.com/picdir/middle/3-38128_computer-icons-search-box-magnifying-glass-download-search.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 28px;
-    border-style: solid;
-}
-.header .search-container button:hover {
-    background: #ccc;
-}
+
 .header p {
     float: left;
     font-size: large;
@@ -124,7 +119,7 @@
 .mySlides {
     display: none;
 }
-.w3-animate-left{
+.w3-animate-left {
     position:relative;
     animation: animateleft 0.4s}
 @keyframes animateleft{from{left:-300px;opacity:0} to{left:0;opacity:1}}
@@ -132,4 +127,79 @@
 .footer p {
     float: left;
     margin-left: 15px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+    .gridcontainer {
+        display:grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        grid-template-areas: 
+            "h h m m"            
+            "c c c c"
+            "l l l l"
+            "f f f f";
+        grid-gap: 5px;
+        background-color: white;
+    }
+    .header input[type=text] {
+    	margin: 10px;
+    	width: 90%;
+  		box-sizing: border-box;
+  		border: 2px solid #ccc;
+  		border-radius: 4px;
+  		font-size: 16px;
+  		background-color: white;
+  		background-image: url('https://www.freeiconspng.com/uploads/search-icon-png-2.png');
+  		background-size: 20px;
+  		background-position: 10px 10px;
+  		background-repeat: no-repeat;
+  		padding: 12px 20px 12px 40px;
+    }
+    .content .grid2 {
+        max-width: 750px;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "o"
+            "o"
+            "o"
+            "o"
+            "o"
+            "o"
+            "o"
+            "o";
+        display: grid;
+        padding: 10px;
+        grid-gap: 10px;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .gridcontainer {
+    display:grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "h h h h h h m m"
+        "c c c c c c c c"
+        "l l l l l l l l"
+        "f f f f f f f f";
+    grid-gap: 5px;
+    background-color: white;
+    }
+    
+    .content .grid2 {
+        max-width: 750px;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "o o"
+            "o o"
+            "o o"
+            "o o";
+        display: grid;
+        padding: 10px;
+        grid-gap: 10px;
+    }
 }
