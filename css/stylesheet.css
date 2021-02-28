@@ -3,3 +3,10 @@
 .footerText {
   font-size: 18px;
 }
+.col img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  vertical-align: bottom;
+  border-radius: 1vmin;
+}
